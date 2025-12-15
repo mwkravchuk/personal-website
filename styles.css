@@ -16,8 +16,19 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: Inter Tight, system-ui, sans-serif;
+  font-family: 'Inter Tight', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
+}
+
+.websites-main {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;      /* vertical */
+  justify-content: center;  /* horizontal */
+}
+
+h1 {
+  margin-bottom: 0.5rem;
 }
 
 a {
@@ -31,10 +42,15 @@ a:hover { text-decoration: underline; }
   margin: 0 auto;
 }
 
+.nav-block {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 2rem 0;
 }
 
