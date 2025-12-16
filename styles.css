@@ -56,9 +56,10 @@ a:hover { text-decoration: underline; }
 
 .nav {
   display: flex;
+  position: sticky;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0;
+  margin: 3rem auto;
 }
 
 .grid {
@@ -107,6 +108,13 @@ img {
   object-fit: cover;
   width: 100%;
   border: solid 1px;
+}
+
+.grid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
 }
 
 p { margin: 0; }
