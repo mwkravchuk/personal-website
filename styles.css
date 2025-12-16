@@ -40,6 +40,13 @@ a:hover { text-decoration: underline; }
 .wrap {
   max-width: var(--container);
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1000px) {
+  .wrap {
+    padding: 0;
+  }
 }
 
 .nav-block {
