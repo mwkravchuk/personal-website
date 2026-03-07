@@ -15,81 +15,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="wrap nav lg underline">
-    <div class="nav-block">
-      <a href="/">Mark Kravchuk</a>
-      <a href="/websites">Website building</a>
-    </div>
-    <a href="mailto:mwkravchuk@gmail.com">mwkravchuk@gmail.com</a>
+
+<body class="wrap">
+  <!-- HEADER -->
+  <header class="xl underline">
+    <nav>
+      <div class="nav-block">
+        <a href="/">Mark Kravchuk</a>
+        <a href="/websites">Website building</a>
+      </div>
+      <a href="mailto:mwkravchuk@gmail.com">mwkravchuk@gmail.com</a>
+    </nav>
   </header>
 
+  <!-- MAIN -->
   <main class="wrap">
-    <section aria-labelledby="intro">
-      <div class="block">
-        <h1 id="intro" class="xxl">hi, im mark</h1>
-        <p class="block xl">a UCD CS grad<br>exploring roles in SWE while working on personal projects.<br>
-        i make YT videos and play games for fun</p>
+    <section id="main-section-1" aria-labelledby="intro">
+      <div>
+        <h1 id="intro-title" class="xxl">hi, im mark</h1>
+        <p class="block xxl">i'm a CS grad spending most of my time coding,<br> playing tennis, piano, trying to work on cars<br>, and some youtube stuff &#x263A</p>
+      </div>
+      <div>
+        <img id="section-1-pic" src="images/jazz-saxophone.gif" alt="snoopy flying">
       </div>
     </section>
 
     <section aria-labelledby="projects-title">
-      <div class="block capitalized" id="projects-title">coding<br>work ↘</div>
+      <h2 class="xxl" id="projects-title">what im doing</h2>
       <div class="grid">
-        <div class="block">
-          <div class="xl">Monopoly Clone</div>
-          <p class="muted space">learning to leverage Web Sockets for real-time multiplayer gameplay</p>
-          <figure><img src="images/monopoly.png" alt="Monopoly app screenshot"></figure>
-        </div>
-        <div class="block">
-          <div class="xl">VALORANT Tracker</div>
-          <p class="muted space">progress towards creating professional user interfaces</p>
-          <figure><img src="images/tracker.png" alt="valorant tracker app screenshot"></figure>
-        </div>
-        <div class="block">
-          <div class="xl">Coffee Ecommerce Page</div>
-          <p class="muted space">practice implementing the full ecommerce flow: products -> cart -> checkout</p>
-          <figure><img src="images/coffee.png" alt="coffee e-commerce app screenshot"></figure>
-        </div>
-        <div class="block">
-          <div class="xl ">AI T-shirt Platform</div>
-          <p class="muted space">Genkit + Printavo integration. built a RESTFUL API from scratch, connecting two services</p>
-          <figure><img src="images/shirts.png" alt="AI tshirt app screenshot"></figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="goals" aria-labelledby="goals-title">
-      <div class="block capitalized" id="goals-title">Goals ↘</div>
-      <div class="grid">
-        <ul class="goals-list">
-          <div class="block xl tight">be a youtuber</div>
-          <div class="block lg" style="font-weight:500">get really good at the piano. most of my favorite songs are beautiful on the piano, and i'd love to learn how to play them</div>
-          <div class="block lg">hang out w friends more and be a fun person to be around</div>
-        </ul>
-
         <div>
-          <div>
-            <iframe src="https://www.youtube.com/embed?list=UUEX6lQE4zJzqK1keo2HIfSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-            <p class="muted" style="margin-top:1rem;">
-              right now on YT i post videos about valorant and how i'm getting better. i would love to turn this into a stream
-              later on. my final goal is to be able to post about how i go from beginner -> intermediate in different hobbies i want to pursue like
-              piano, go-karting, working on cars etc. i would want to do this in a cinematic kind of style.
-            </p>
+          <div class="xl">SOFTWARE DEV</div>
+          <p class="muted space">currently helping a startup get up and running while building a monopoly side project + practicing C++ because I am trying to land a SWE job</p>
+          <figure><img class="gallery-img" src="images/shirts.png" alt="Startup app screenshot"></figure>
         </div>
-      </div>
-    </section>
-
-    <section id="thoughts" aria-labelledby="thoughts-title">
-      <div class="block capitalized" id="thoughts-title">Recent Thoughts ↘</div>
-      <div>
-        <div class="block">you can't steer a ship that isnt moving. it's so much faster to iterate publicly (and do things suboptimally)<br>than to run it through your own mental model 50 times (just to never do it anyways). perfectionism is just so useless a lot of the time.</div>  
+        <div>
+          <div class="xl">MIATA &#x2792&#x278C</div>
+          <p class="muted space">im trying to learn car stuff with my brother so we bought a miata to work on and flip. i want to get my own clean miata to drive around in though</p>
+          <figure><img class="gallery-img" src="images/miata.jpg" alt="picture of 93 miata"></figure>
+        </div>
+        <div>
+          <div class="xl">PIANO &#x266A</div>
+          <p class="muted space">most of my favorite songs are on piano so i wanna get good enough to play them. im learning music theory so that im not just reading notes one by one while i learn. i am currently learning fullmoon lullaby</p>
+          <a href="https://youtu.be/JXqCtA1goR0?si=oFNwAgzkIoYCIn8W"><figure><img class="gallery-img" src="images/fullmoonlullaby.jpeg" alt="piano screenshot"></figure></a>
+        </div>
+        <div>
+          <div class="xl ">VIDEOS</div>
+          <p class="muted space">i think it would be fun to make youtube videos about stuff im doing in life because there are a bunch of different things I want to do. I think it would be cool to share stuff im working on + vlogging stuff + my thoughts about things</p>
+          <a href="https://youtube.com/@markxk?si=ErZ-CFimW73sbEdX"><figure><img class="gallery-img" src="images/youtube.png" alt="youtube channel screenshot"></figure></a>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="wrap footer">
+    <h2 class="lg">recent thought/quote</h2>
+    <p>
+      you can't steer a ship that isnt moving. it's much better to put urself out there and make things, even if you do them suboptimally.<br> perfectionism is just so useless a lot of the time.
+    </p>
   </footer>
 </body>
 </html>
