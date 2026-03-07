@@ -3,7 +3,7 @@
   --liked-color: hsl(228, 100%, 86%);
   --accent: hsl(228, 100%, 68%);
   --fg: #212121;
-  --link: hsl(313, 72%, 18%);
+  --link: hsl(314, 58%, 35%);
   --link-hover: hsl(314, 50%, 47%);
   --muted: hsl(314, 68%, 11%);
   --container: 950px;
@@ -181,62 +181,52 @@ p { margin: 0; }
   }
 }
 
-/* Xmas lights */
-.xmas-lights{
-  position: sticky; top: 0; z-index: 50;
-  height: 26px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 10px clamp(1rem, 4vw, 2rem);
-  pointer-events: none;
-  margin-top: 2rem;
-}
-
-/* “wire” */
-.xmas-lights::before{
-  content:"";
-  position:absolute;
-  left:0; right:0;
-  top: 50%;
-  height: 2px;
-  background: rgba(0,0,0,.25);
-  transform: translateY(-50%);
-}
-
-/* bulbs */
-.xmas-lights span{
+.season-band {
   position: relative;
-  width: 10px; height: 10px;
+  height: 44px;
+  margin-top: 1.25rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.season-band.spring {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.season-band.spring span {
+  position: relative;
+  width: 16px;
+  height: 16px;
   border-radius: 999px;
-  background: hsl(var(--h, 120) 80% 55%);
-  box-shadow: 0 0 12px rgba(0,0,0,.08);
-  animation: twinkle 1.8s infinite ease-in-out;
+  background: hsl(330 70% 78%);
+  box-shadow:
+    10px 0 0 hsl(45 90% 78%),
+    -10px 0 0 hsl(160 45% 72%),
+    0 10px 0 hsl(320 75% 82%),
+    0 -10px 0 hsl(40 95% 80%);
+  opacity: 0.9;
 }
 
-/* little socket */
-.xmas-lights span::after{
-  content:"";
-  position:absolute;
-  width: 6px; height: 4px;
-  left: 50%; top: -5px;
-  transform: translateX(-50%);
-  border-radius: 2px;
-  background: rgba(0,0,0,.35);
+/* flower center */
+.season-band.spring span::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 999px;
+  background: hsl(50 95% 68%);
+  z-index: 1;
 }
 
-/* vary colors + timing */
-.xmas-lights span:nth-child(4n+1){ --h: 0;   animation-delay: .0s; }
-.xmas-lights span:nth-child(4n+2){ --h: 120; animation-delay: .3s; }
-.xmas-lights span:nth-child(4n+3){ --h: 55;  animation-delay: .6s; }
-.xmas-lights span:nth-child(4n+4){ --h: 210; animation-delay: .9s; }
-
-@keyframes twinkle{
-  0%, 100% { transform: translateY(0); opacity: .75; filter: brightness(.95); }
-  50%      { transform: translateY(-1px); opacity: 1;   filter: brightness(1.15); }
+.season-band.spring span:nth-child(3n) {
+  transform: translateY(-4px) scale(0.9);
 }
 
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce){
-  .xmas-lights span{ animation: none; }
+.season-band.spring span:nth-child(4n) {
+  transform: translateY(3px) scale(1.05);
+}
+
+.season-band.spring span:nth-child(5n) {
+  transform: translateY(-2px) scale(0.8);
 }
