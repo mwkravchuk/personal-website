@@ -23,12 +23,11 @@
         <div class="nav-block">
           <a href="/">Mark Kravchuk</a>
           <a href="/projects">Software projects</a>
-          <a href="/websites">Website building</a>
         </div>
         <a href="mailto:mwkravchuk@gmail.com">mwkravchuk@gmail.com</a>
       </nav>
       <!-- SEASON BAND -->
-      <div class="season-band spring" aria-hidden="true">
+      <div class="season-band summer" aria-hidden="true">
         <span></span><span></span><span></span><span></span><span></span>
         <span></span><span></span><span></span><span></span><span></span>
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
@@ -38,26 +37,19 @@
 
     <main>
       <section class="projects-hero" aria-labelledby="projects-intro-title">
-        <h1 id="projects-intro-title" class="xxl">software projects</h1>
+        <h1 id="projects-intro-title" class="xxxl">software projects</h1>
       </section>
 
       <section class="project-list" aria-label="Project writeups">
         <article class="project-entry">
           <div class="project-copy">
-            <h2 class="xl">Helping build an early-stage app</h2>
-            <p class="muted">
-              I have been helping a startup get its product off the ground, which has meant working through ambiguous requirements, building user-facing pieces, and making the app more usable as real needs become clearer.
+            <a href="https://picture-sheets.web.app/" class="xl">Local apparel printshop (dev)</a>
+            <p class="project-subtitle muted">
+              (system resiliency, product thinking)
             </p>
-            <dl class="project-facts">
-              <div>
-                <dt>Focus</dt>
-                <dd>Product engineering, UI work, iteration</dd>
-              </div>
-              <div>
-                <dt>What I learned</dt>
-                <dd>Good software is not just getting code to run. I learned how much the small product decisions matter: what to show first, what to make obvious, and how to keep moving when the requirements are still changing.</dd>
-              </div>
-            </dl>
+            <p class="project-learning muted">
+              Learned what changes when software is built for someone else instead of just for myself: clearer workflows and more care around reliability and maintainability.<br>This was my first paid development work so I got practical experience with git-based collaboration, logging and monitoring, API creation and integration, and drawing clean boundaries between apps.
+            </p>
           </div>
           <figure class="project-media">
             <img src="../images/shirts.png" alt="Screenshot from startup app work">
@@ -66,65 +58,52 @@
 
         <article class="project-entry">
           <div class="project-copy">
-            <h2 class="xl">Monopoly game project</h2>
-            <p class="muted">
-              I am building a Monopoly-style project because it forces a lot of useful engineering problems into one place: turns, rules, money, ownership, player state, and edge cases that have to stay consistent.
+            <a href="https://demo.twofishescoffee.com/" class="xl">Coffee roaster ecommerce platform</a>
+            <p class="project-subtitle muted">
+              (ecommerce, retryability, editorial UI)
             </p>
-            <dl class="project-facts">
-              <div>
-                <dt>Focus</dt>
-                <dd>Game state, rule modeling, UI flow</dd>
-              </div>
-              <div>
-                <dt>What I learned</dt>
-                <dd>The biggest lesson has been separating the rules from the screen. When the game logic is its own thing, it becomes much easier to test, debug, and trust the UI that sits on top of it.</dd>
-              </div>
-            </dl>
+            <p class="project-learning muted">
+              Learned how product presentation, visual hierarchy, and checkout flow work together to make an ecommerce experience feel trustworthy.<br>This was the first project where I defined a clear MVP, implemented it, and brainstormed ways to expand on it without losing focus on the core experience.
+            </p>
           </div>
-          <figure class="project-media project-placeholder" aria-label="Screenshot placeholder for Monopoly game project">
-            <div class="mock-window">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="mock-board" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-              <span></span><strong>GO</strong><span></span><span></span>
-              <span></span><span></span><span></span><span></span>
-            </div>
+          <figure class="project-media">
+            <img src="../images/roaster.png" alt="Screenshot from coffee roaster website">
           </figure>
         </article>
 
         <article class="project-entry">
           <div class="project-copy">
-            <h2 class="xl">C++ practice and fundamentals</h2>
-            <p class="muted">
-              I have been practicing C++ to sharpen the lower-level parts of my programming: memory, data structures, performance, debugging, and writing code that is more explicit about what it owns.
+            <h2 class="xl">Monopoly game project</h2>
+            <p class="project-subtitle muted">
+              (server authority, websockets, Phaser visuals)
             </p>
-            <dl class="project-facts">
-              <div>
-                <dt>Focus</dt>
-                <dd>Core language practice, problem solving, debugging</dd>
-              </div>
-              <div>
-                <dt>What I learned</dt>
-                <dd>C++ has made me more careful in a good way. It pushes me to think about lifetime, ownership, and program structure instead of relying on the language to hide those details.</dd>
-              </div>
-            </dl>
+            <p class="project-learning muted">
+              Learned how to make a game UI feel responsive while keeping the server as the source of truth.<br>This was my first time working with a more gamified interface with Go websockets, synchronized state, and the awkward edge cases that show up when the network is not perfectly reliable.
+            </p>
           </div>
-          <figure class="project-media project-placeholder terminal-placeholder" aria-label="Screenshot placeholder for C++ practice">
-            <div class="mock-window">
-              <span></span><span></span><span></span>
-            </div>
-            <pre aria-hidden="true"><code>$ g++ main.cpp
-$ ./practice
-tests passing: 12/12
-runtime: 0.04s</code></pre>
+          <figure class="project-media">
+            <img src="../images/polyopoly.png" alt="Screenshot from monopoly project work">
+          </figure>
+        </article>
+
+        <article class="project-entry">
+          <div class="project-copy">
+            <a href="https://www.slkautorepair.com/" class="xl">Auto repair website</a>
+            <p class="project-subtitle muted">
+              (local business, conversion-focused layout, email automation)
+            </p>
+            <p class="project-learning muted">
+              Learned how to turn a real person's business need into a simple website that helps them receive better customer requests.<br>This was my first client website, and it pushed me to think less like I was making a page and more like I was solving a problem for someone who needed a website in order to get more business.
+            </p>
+          </div>
+          <figure class="project-media">
+            <img src="../images/slkauto.png" alt="Screenshot from auto repair website">
           </figure>
         </article>
       </section>
     </main>
 
     <footer class="footer projects-footer">
-      <h2 class="lg">more details</h2>
       <p>
         I can talk through the code, tradeoffs, and what I would improve next.
         <a href="mailto:mwkravchuk@gmail.com">mwkravchuk@gmail.com</a>
