@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>software projects | mark kravchuk</title>
+    <!-- Icon -->
+    <link rel="icon" href="../favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+
+  <body class="wrap projects-page">
+    <!-- HEADER -->
+    <header class="xl underline">
+      <nav>
+        <div class="nav-block">
+          <a href="/">Mark Kravchuk</a>
+          <a href="/projects">Software projects</a>
+          <a href="/websites">Website building</a>
+        </div>
+        <a href="mailto:mwkravchuk@gmail.com">mwkravchuk@gmail.com</a>
+      </nav>
+      <!-- SEASON BAND -->
+      <div class="season-band spring" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects-hero" aria-labelledby="projects-intro-title">
+        <h1 id="projects-intro-title" class="xxl">software projects</h1>
+      </section>
+
+      <section class="project-list" aria-label="Project writeups">
+        <article class="project-entry">
+          <div class="project-copy">
+            <h2 class="xl">Helping build an early-stage app</h2>
+            <p class="muted">
+              I have been helping a startup get its product off the ground, which has meant working through ambiguous requirements, building user-facing pieces, and making the app more usable as real needs become clearer.
+            </p>
+            <dl class="project-facts">
+              <div>
+                <dt>Focus</dt>
+                <dd>Product engineering, UI work, iteration</dd>
+              </div>
+              <div>
+                <dt>What I learned</dt>
+                <dd>Good software is not just getting code to run. I learned how much the small product decisions matter: what to show first, what to make obvious, and how to keep moving when the requirements are still changing.</dd>
+              </div>
+            </dl>
+          </div>
+          <figure class="project-media">
+            <img src="../images/shirts.png" alt="Screenshot from startup app work">
+          </figure>
+        </article>
+
+        <article class="project-entry">
+          <div class="project-copy">
+            <h2 class="xl">Monopoly game project</h2>
+            <p class="muted">
+              I am building a Monopoly-style project because it forces a lot of useful engineering problems into one place: turns, rules, money, ownership, player state, and edge cases that have to stay consistent.
+            </p>
+            <dl class="project-facts">
+              <div>
+                <dt>Focus</dt>
+                <dd>Game state, rule modeling, UI flow</dd>
+              </div>
+              <div>
+                <dt>What I learned</dt>
+                <dd>The biggest lesson has been separating the rules from the screen. When the game logic is its own thing, it becomes much easier to test, debug, and trust the UI that sits on top of it.</dd>
+              </div>
+            </dl>
+          </div>
+          <figure class="project-media project-placeholder" aria-label="Screenshot placeholder for Monopoly game project">
+            <div class="mock-window">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mock-board" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+              <span></span><strong>GO</strong><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </figure>
+        </article>
+
+        <article class="project-entry">
+          <div class="project-copy">
+            <h2 class="xl">C++ practice and fundamentals</h2>
+            <p class="muted">
+              I have been practicing C++ to sharpen the lower-level parts of my programming: memory, data structures, performance, debugging, and writing code that is more explicit about what it owns.
+            </p>
+            <dl class="project-facts">
+              <div>
+                <dt>Focus</dt>
+                <dd>Core language practice, problem solving, debugging</dd>
+              </div>
+              <div>
+                <dt>What I learned</dt>
+                <dd>C++ has made me more careful in a good way. It pushes me to think about lifetime, ownership, and program structure instead of relying on the language to hide those details.</dd>
+              </div>
+            </dl>
+          </div>
+          <figure class="project-media project-placeholder terminal-placeholder" aria-label="Screenshot placeholder for C++ practice">
+            <div class="mock-window">
+              <span></span><span></span><span></span>
+            </div>
+            <pre aria-hidden="true"><code>$ g++ main.cpp
+$ ./practice
+tests passing: 12/12
+runtime: 0.04s</code></pre>
+          </figure>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer projects-footer">
+      <h2 class="lg">more details</h2>
+      <p>
+        I can talk through the code, tradeoffs, and what I would improve next.
+        <a href="mailto:mwkravchuk@gmail.com">mwkravchuk@gmail.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
